@@ -1,0 +1,43 @@
+section{
+    padding-bottom: 50px;
+    border-bottom: black 1px solid;
+}
+
+section:first-child h4{
+    color: blue;
+}
+
+.section2{
+    border-bottom: red solid;
+    border-bottom:15px;
+    
+
+}
+h3{
+    color:red;
+}
+
+p:nth-child(){
+    background-color: yellow;
+}
+ul{
+    color:red
+}
+
+a{
+    font-size: 25px;
+}
+
+.section3{
+    color: blue;
+}
+
+img[alt="la tartine"]{
+    border: goldenrod solid 20px;
+    border-radius: 1rem; 
+}
+
+.exo7 :hover{
+    color: green;
+}
+/* last-of-type */

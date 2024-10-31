@@ -1,0 +1,40 @@
+.contenue{
+    text-align: center;
+    width: 100%;
+}
+
+div{
+    background-color: red;
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.part1{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10%;
+    height: 15vh;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.partie1{
+    
+}
+.part2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10%;
+    height: 10vh;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.part3{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 10%;
+    height: 10vh;
+    align-content: center;
+    justify-content: space-between;
+}

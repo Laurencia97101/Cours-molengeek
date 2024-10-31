@@ -1,0 +1,64 @@
+div {
+  /* pour le 1,2,3 
+   animation: mymove 1s ease-in-out forwards reverse;  */
+  /* pour le 5 
+  animation: mymove 1s forwards reverse;
+  animation-iteration-count: 2;*/
+  /* pour le 6 
+  animation: mymove 4s ease-in-out forwards;
+  animation-direction: alternate;*/
+
+  animation: anime 2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+div:hover{
+  animation-play-state: paused;
+}
+@keyframes mymove {
+   /* from {left: 0px;}  0% */
+   /* to {left: 300px;}  100% */
+  0% {
+    transform: translate(300px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes anime {
+  0%{
+    transform: translate(0, 150px);
+  }
+  25%{ 
+    transform: translate(150px, 150px);
+  }
+  50%{
+    transform: translate(150px, 0);
+  }
+  75%{
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(0, 150px);
+  }
+}
+
+.bounce-title{
+    animation: bounce 2s infinite;
+
+}
+
+@keyframes bounce {
+  0%{
+    transform: (0px) scaleY(1);
+  }
+  25%{
+    transform: translateY(-100px) scaleY(2);
+  }
+  100%{
+    transform: translateY(0px) scaleY(0.5);
+  }
+}
+
+

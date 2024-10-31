@@ -1,0 +1,59 @@
+
+
+div{
+    display: grid;
+    grid-gap: 10px;
+    font-size: 2rem;
+    align-content: center;
+}
+
+p{
+
+   align-content: center;
+
+}
+
+.passe{
+    position: absolute;
+    width: 500px;
+    height: 35px;
+    animation: anime_passe infinite alternate-reverse;
+    background-color:gray;
+    opacity: 0.2;
+    animation-duration: 10s;
+
+}
+
+@keyframes anime_passe {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateY(380px);
+    }
+}
+
+.bonus{
+    width: 150px;
+    height: 150px;
+    margin-top: -20%; 
+    margin-left: 50%;
+    align-content: center;
+    animation: anim_bonus infinite alternate-reverse;
+    animation-duration: 10s; 
+
+}
+
+
+
+@keyframes anim_bonus {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        background-color: red;
+    }
+ }
