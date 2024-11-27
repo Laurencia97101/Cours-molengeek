@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: 20px;
+}
+
+.partie1{
+    height: 60px;
+    background-color: #9b009d;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    margin-left: 3px;
+    margin-top: 5px;
+    color: rgba(205, 127, 206);
+}
+
+.part2{
+    margin-left: 20%;
+    margin-top: -65px;
+    color: #eee2e5;
+
+    
+}
+
+input{
+    border-radius: 8px;
+    height: 30px;
+    width: 15%;
+}
+
+button{
+    background-color: #00e173;
+    color: wheat;
+    padding: 6px;
+    border-radius: 8%;
+    width: 10%;
+    font-size: 18px;
+    margin-top: -10px;
+    align-items: center;
+}    
+
+
+
+
+.logo_m{
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.part3{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+    
+}
+a:hover::after{ 
+    /* La ligne prend toute la largeur lors du survol */
+    width: 100%;
+    background-color: black;
+ }
+.bordure div{
+    border: solid 2px lightgray;
+    border-top: none;
+
+}
+.part4{
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 1%;
+    padding: 20px;
+    width: 60%; 
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.test{
+    text-align: center;
+    align-content: center;
+}
+
+main{
+    margin-top: 20px;
+    padding: 20px;
+    width: 80%;
+}
+
+h1, h2{
+    margin-left: 20%;
+    text-align: center;
+    font-weight:20;
+}
+
+p, li {
+    align-content: center;
+    margin-left: 20%;
+}
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+
+hr{
+    margin-top: 150px;
+    opacity: 0.1;
+}
+.part6{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 50%;
+    margin-left: 20%;
+    
+}
+
+.reseaux{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+}
+
+.carte{
+    width: 50px;
+    height: 50px;
+    border: #eee2e5 solid;
+    padding: 10%;
+    color: #eee2e5;
+    border-radius: 3rem;
+}
+
+.social{
+    display: flex;
+    color: white;
+    margin-left: 80px;
+    margin-top: -25%;
+    
+}
+
+/* pour les responsives */
+
+/* Styles par défaut pour les grands écrans */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Styles spécifiques pour les écrans de moins de 600 pixels de large */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.arrow{
+    color: white;
+    text-align: right;
+}
